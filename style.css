@@ -22,10 +22,6 @@ body {
   justify-self: center;
   align-self: center;
 }
-/* .container.inner {
-  height: 100%;
-  width: 100%;
-} */
 
 button {
   width: fit-content;
@@ -34,11 +30,6 @@ button {
   justify-self: center;
 }
 
-/* .square {
-  border-color: black;
-  border-style: solid;
-  border-width: 3px;
-} */
 /* 
 @media (hover: hover) {
   .square:hover {
