@@ -1,0 +1,48 @@
+body {
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 75vh;
+  max-height: 95vh;
+  aspect-ratio: 1 / 1;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  justify-self: center;
+  align-self: center;
+}
+/* .container.inner {
+  height: 100%;
+  width: 100%;
+} */
+
+button {
+  width: fit-content;
+  padding: 8px 16px;
+  margin: auto;
+  justify-self: center;
+}
+
+/* .square {
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+} */
+/* 
+@media (hover: hover) {
+  .square:hover {
+    color: white;
+    background: black;
+  }
+} */
