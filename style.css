@@ -29,11 +29,3 @@ button {
   margin: auto;
   justify-self: center;
 }
-
-/* 
-@media (hover: hover) {
-  .square:hover {
-    color: white;
-    background: black;
-  }
-} */

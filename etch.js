@@ -15,12 +15,26 @@ function generateGrid(sideLength = 16) {
 
   for ( i = 0; i < squared; i++ ) {
     let sq = document.createElement("div");
-    sq.setAttribute("class", "square")
     sq.style.height = sqArg;
     sq.style.aspectRatio = "1 / 1";
+    sq.style.opacity = "0";
     sq.addEventListener("mouseover", (event) => {
-        event.target.style.backgroundColor = "black"});
+      if ( event.target.style.getPropertyValue("opacity") === "0" ) {
+        event.target.style.backgroundColor = randomRGB();
+        event.target.style.opacity = "0.1";
+      } else {increaseOpacity(event.target);
+      }
+    });
     container.appendChild(sq);
   }
 };
 
+function randomRGB() {
+  return 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+}
+
+function increaseOpacity(element) {
+  let op = Number(element.style.getPropertyValue("opacity"));
+  op += 0.1;
+  element.style.opacity = String(op);
+}
